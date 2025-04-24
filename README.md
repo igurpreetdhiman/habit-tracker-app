@@ -4,7 +4,7 @@ A simple and responsive Habit Tracker web app built with **vanilla JavaScript**,
 
 ## Live Site
 
-[View the deployed app on GitHub Pages](https://username.github.io/habit-tracker-app/)
+https://igurpreetdhiman.github.io/habit-tracker-app/
 
 
 ## Features & Functionalities
