@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Sign Out Button -->
+  <div class="top-right">
+    <button id="signOutBtn" style="display:none;">Sign Out</button>
+  </div>
+
+  <!-- Auth Section -->
+  <div class="auth-section" id="authSection">
+    <h2>Welcome to Habit Tracker</h2>
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <div class="auth-buttons">
+      <button id="signInBtn">Sign In</button>
+      <button id="signUpBtn">Sign Up</button>
+    </div>
+  </div>
+
+  <!-- Habit Tracker Section -->
+  <div class="container" id="habitSection" style="display:none;">
+    <h1>Habit Tracker</h1>
+    <form id="habitForm">
+      <input type="text" id="habitInput" placeholder="Enter a new habit" required />
+      <input type="number" id="habitDaysInput" placeholder="Target days (e.g. 21)" required />
+      <button type="submit">Add Habit</button>
+    </form>
+    <ul id="habitList"></ul>
+  </div>
+
+  <!-- Chatbot -->
+  <div id="chatbot-container">
+    <button id="chatToggle">🤖</button>
+    <div id="chatWindow" style="display: none;">
+      <div id="chatHeader">AI Assistant</div>
+      <div id="chatMessages"></div>
+      <div id="chatInputContainer">
+        <input type="text" id="chatInput" placeholder="Ask me anything..." />
+        <button id="sendMessage">➤</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="firebase.js" type="module"></script>
+  <script src="app.js" type="module"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
+
